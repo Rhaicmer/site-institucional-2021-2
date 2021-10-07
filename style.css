@@ -1,0 +1,113 @@
+/*
+ Cor primária: #F9D84D
+ Cor primária clara: #FFEC9C
+ Cor secundária: #F94D58
+ Cor secundaria clara: #FD9CA3
+ Cor de fundo: #333333
+ Cor do texto #cccccc
+
+*/
+/*variáveis*/
+:root{
+    --cor-prim: #F9D84D;
+    --cor-prim-clara: #FFEC9C;
+    --cor-secun: #F94D58;
+    --cor-secun-clara: #FD9CA3;
+    --cor-fundo: #333333;
+    --cor-fundo-claro: #555555;
+    --cor-texto: #cccccc;
+}
+
+/*********Css reset**********/
+*{
+    font-family: Calibri, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: unset;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+
+}
+/*********Css reset**********/
+
+body{
+    background-color: aqua;
+}
+
+header{
+    display: flex;
+    justify-content: center; /*Centralização horizontal*/
+    align-items: center; /*Centralização vertical*/
+    background-color: var(--cor-prim);
+    min-height: 50px;
+    flex-wrap: wrap;
+}
+
+#img-logo{
+    background-color: transparent !important;
+}
+
+nav{
+    display: flex;
+    justify-content: center; /*Centralização horizontal*/
+    align-items: center; /*Centralização vertical*/
+    background-color: var(--cor-secun);
+    width: 100%;
+    margin: 5px;
+}
+
+main{
+    display: flex;
+    justify-content: center; /*Centralização horizontal*/
+    align-items: stretch; /*Meus filhos tem meu tamanho*/
+    min-height: 400px;
+}
+
+section{
+    display: flex;
+    justify-content: center; /*Centralização horizontal*/
+    align-items: center; /*Centralização vertical*/
+    flex-direction: column;/*filhos em coluna*/
+    border: 1px solid rgb(32, 1, 53);
+    background-color: rgb(124, 255, 146);
+    min-height: 100%;
+    flex-grow: 3;
+    margin: 5px;
+}
+
+article{
+    display: flex;
+    justify-content: center; /*Centralização horizontal*/
+    align-items: center; /*Centralização vertical*/
+    border: 1px solid rgb(182, 135, 6);
+    background-color: rgb(113, 118, 167);
+    margin: 5px;
+    min-height: 150px;
+    width: 100%;
+}
+
+aside{
+    display: flex;
+    justify-content: center; /*Centralização horizontal*/
+    align-items: center; /*Centralização vertical*/
+    border: 1px solid rgb(32, 1, 53);
+    background-color: rgb(182, 182, 182);
+    min-height: 100%;
+    flex-grow: 1;
+    margin: 5px;
+}
+
+footer{
+    display: flex;
+    justify-content: center; /*Centralização horizontal*/
+    align-items: center; /*Centralização vertical*/
+    background-color: var(--cor-fundo-claro);
+    min-height: 50px;
+}
+
+@media screen and (max-width: 600px){
+    main{
+        flex-direction: column;/*Muda a direção para a coluna*/
+    }
+
+}
